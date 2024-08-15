@@ -1,0 +1,4 @@
+.intro{
+    min-height: 100vh;
+    background: url('./../../../public/assets/img/introBg.webp') center/cover;
+}
