@@ -1,0 +1,39 @@
+.sponsor__section{
+    text-align: center;
+    background: #dcdcdc;
+    padding: 25px 0 0 0;
+    & img{
+        width: 100%;
+    }
+    & .main__sponsors{
+       & li {
+        max-width: 250px;
+        margin: auto;
+       }
+       & img:hover{
+        filter: drop-shadow(0 0 10px #7d7de6);
+       }
+        
+    }
+    & .other__sponsors{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      align-items: center;
+        gap: 20px;
+        & img:hover{
+            filter: drop-shadow(0 0 10px #7d7de6);
+           }
+    }
+}
+
+@media only screen and (width < 500px) {
+    .sponsor__section{
+    
+        & .main__sponsors{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+       
+    }
+}

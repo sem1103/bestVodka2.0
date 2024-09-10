@@ -1,0 +1,217 @@
+section.speakers {
+  padding: clamp(30px, 5vw, 70px) 10px;
+  text-align: center;
+
+  & h2 {
+    line-height: 3;
+  }
+
+  & .sub__box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    & .icon {
+      position: relative;
+      transform: translateX(0);
+
+      & svg,
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      &::before {
+        content: '';
+        border-bottom: 2px solid gainsboro;
+        width: 90px;
+        bottom: -13px;
+        position: absolute;
+        z-index: 9;
+        transform: translateX(-20%);
+
+      }
+    }
+
+
+    h3 {
+      color: black;
+      margin: clamp(25px, 4vw, 50px) 0 clamp(15px, 4vw, 10px) 0;
+    }
+
+    p {
+      color: #515151;
+    }
+  }
+
+  & .speaker__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: clamp(30px, 5vw, 70px) 10px;
+
+
+    /* Пустота между элементами */
+    & .speaker__item {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 45px 0 45px;
+      padding: 10px;
+
+      & h5 {
+        font: 700 20px Montserrat;
+        color: var(--globalPrimary);
+        padding: 5px 0;
+        border-bottom: 1px solid #00BAFF;
+      }
+
+      & h6 {
+        font: 400 14px/28px Montserrat;
+        color: var(--globalPrimary);
+      }
+
+      & p {
+        font: 700 12px Montserrat;
+        color: var(--globalPrimary);
+      }
+
+      & img {
+        width: 100%;
+      }
+
+      &:hover {
+
+        /* box-shadow: 0 0 5px 2px var(--globalPrimary); */
+        & img {
+          transform: translateY(-3px);
+        }
+      }
+
+      & .soc__icons {
+        display: flex;
+        justify-content: center;
+        padding: 10px 25px;
+        flex-wrap: wrap;
+        margin: auto 0 0 0;
+
+        &>* {
+          margin: 7px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.soc__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.soc__icon .soc__link {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+}
+
+.soc__icon .svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 1px;
+  /* Adjusted letter spacing */
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.soc__icon .BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0165e1;
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.soc__icon:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Added box shadow effect */
+}
+
+.soc__icon:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.soc__icon:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+
+.insta .BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: -webkit-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.linked .BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0077b5;
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}

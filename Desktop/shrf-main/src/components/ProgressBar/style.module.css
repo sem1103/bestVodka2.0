@@ -1,0 +1,40 @@
+.progress__bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    border: 0;
+    margin: 0;
+    background: #7d7de6;
+    z-index: 99999;
+    box-shadow: 0 0 10px 5px #7d7de6;
+    transition: none;
+    border-radius: 5px;
+}
+
+.to__top{
+    position: fixed;
+    right: -100%;
+    bottom: 25px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px #7d7de6;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 99999;
+    opacity: .8;
+    &.showTopBtn{
+        right: 25px;
+
+    }
+    &:hover{
+        transform: translateY(-5px);
+    }
+    & svg{
+        margin: 0;
+    }
+}
