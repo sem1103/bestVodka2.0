@@ -12,6 +12,7 @@
 # next.js
 /.next/
 /out/
+/.history
 
 # production
 /build
@@ -34,4 +35,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.history

@@ -86,17 +86,34 @@ export default function Home() {
       
         <Header headerFixed={headerFixed} scrollHandler={scrollHandler} />
         <div className={s.intro} ref={introRef}>
+          {/* <video src="/assets/img/intro.mp4" muted autoPlay loop></video> */}
           <div className={s.intro__container}>
 
-            <h1 className={s.prod__name}>Застолье - <span>premium vodka</span></h1>
-            <div className={s.prod__img}>
+            <h1 className={s.prod__name}>BEST  <span>Fərdi Şəxsi Firması</span></h1>
+            <p>Продолжем традиции  1995 года</p>
+            {/* <div className={s.prod__img}>
               <img src="/assets/img/bootle.webp" alt="" />
-            </div>
-            <p className={s.prod__desc}>Это уникальная водка, созданная из отборного зерна и чистейшей ледниковой воды, обладающая мягким вкусом с легкими нотками трав и пряностей. Элегантная упаковка и богатый вкус делают её идеальным выбором для коктейлей и стильных мероприятий.</p>
+            </div> */}
+            {/* <p className={s.prod__desc}>Это уникальная водка, созданная из отборного зерна и чистейшей ледниковой воды, обладающая мягким вкусом с легкими нотками трав и пряностей. Элегантная упаковка и богатый вкус делают её идеальным выбором для коктейлей и стильных мероприятий.</p> */}
 
 
           </div>
         </div>
+
+        <section className={s.new__prod}>
+              <div className='container'>
+                <div className={s.prod__info}>
+                  <h2>Водка "Северная Тропа"</h2>
+                  <p>Водка 'Северная Тропа' — это чистый, мягкий вкус, созданный из натуральных ингредиентов, дарованных северной природой. Сочетание кристально чистой воды и отборных злаков придает напитку характерную свежесть и легкость.</p>
+                </div>
+
+                <div className={s.prod__img}>
+                  <img src="/assets/img/newProd.png" alt="" />
+                </div>
+             
+                
+              </div>
+        </section>
 
         <section className={`${s.our__prods}`}>
           <h2 className='container'>
@@ -183,12 +200,12 @@ export default function Home() {
           </Swiper>
         </section>
 
-        <section className={s.our__slogan}>
+        {/* <section className={s.our__slogan}>
           <div className={s.musk}></div>
           <h2>
             Мы используем <br /> ингредиенты, подаренные  <br /> самой <span>природой</span>.
           </h2>
-        </section>
+        </section> */}
 
         <section className={`${s.about__us} container`}>
           <div>

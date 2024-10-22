@@ -1,19 +1,25 @@
 .intro {
   min-height: 100vh;
-  padding: 122px 25px 0 25px;
+  padding: 145px 25px 45px  ;
   position: relative;
   perspective: 1000px;
   overflow: hidden;
+  background:  url('./../../public/assets/img/introBg.png') top/cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
 
-  &::before {
+
+   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('./../../public/assets/img/introBg.webp') top/cover;
-    background-attachment: fixed;
+    background: #0000004b ;
 
   }
-
+/*
   &::after {
     content: '';
     position: absolute;
@@ -21,18 +27,16 @@
     background: url('./../../public/assets/img/musk.png') top/cover;
     inset: -5vw;
     transform: rotateX(var(--moveY)) rotateY(var(--moveX));
-  }
+  } */
+
+ 
 }
 
 .intro__container {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
 
   /* transform-style: preserve-3d; */
-  &::before,
+  /* &::before,
   &::after {
     content: '';
     position: absolute;
@@ -47,7 +51,7 @@
     animation-delay: 4s;
     animation-timing-function: ease-out;
 
-  }
+  } */
 
   &::after {
     animation-name: animBirdsLeft;
@@ -60,7 +64,7 @@
 
   & .prod__img,
   & .prod__name,
-  & .prod__desc {
+  & p {
     position: relative;
     z-index: 2;
   }
@@ -75,27 +79,24 @@
 
 
   & .prod__name {
-    font: 700 54px Oswald;
-    text-transform: uppercase;
-    position: absolute;
-    top: 150px;
-    left: 45px;
-    color: #23323a;
-    max-width: 550px;
-
-    & span {
-      font-size: 34px;
-      text-transform: none;
+    font: 700 94px Oswald;
+    color: #fff;
+    line-height: 1;
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 10px #ffffff57;
+    & span{
+      display: block;
+      font-size: 40px;
     }
   }
 
-  & .prod__desc {
-    font: 400 20px Oswald;
-    position: absolute;
-    bottom: 350px;
-    right: 45px;
-    max-width: 350px;
-    color: #23323a;
+  & p {
+    font: 400 30px Oswald;
+    text-shadow: 0 0 10px #ffffff57;
+
+  
+    color: #fff;
+    z-index: 1;
   }
 
   & .prod__model {
@@ -172,7 +173,7 @@
   & .prod__name {
     font-size: clamp(25px, 3vw, 40px);
     font-weight: 500;
-    color: #333;
+    color: #207D8B;
     line-height: 1.2;
     margin: 15px 0 30px 0;
     text-transform: uppercase;
@@ -373,6 +374,28 @@
 }
 
 
+.new__prod {
+  padding: 25px 0;
+  & > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    & > div{
+      flex-basis: calc((100% - 24px) / 2);
+    }
+    & img{
+      max-width: 150px;
+      margin: auto;
+      display: block;
+    }
+
+    & p{
+      margin: 15px 0 0 0;
+      font: 20px Oswald ;
+    }
+  }
+  
+}
 
 
 /*Media*/

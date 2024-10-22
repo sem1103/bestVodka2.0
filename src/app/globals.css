@@ -288,13 +288,13 @@ div.our_prod__slider{
 
   & .swiper-slide-active {
     & > div{
-      box-shadow: 0 0 10px 1px #404040;
+      box-shadow: 0 0 10px 1px #207D8B;
     }
     & h4{
       opacity: 1;
-      color: #c03b3e;
+      color: #FE8E3D;
       &::before{
-        background-color: #c03b3e;
+        background-color: #FE8E3D;
       }
     }
     & img{

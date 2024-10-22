@@ -39,7 +39,7 @@
             }
 
             & a {
-                color: #273948;
+                color: #fff;
                 font: 16px Montserrat;
 
             }
@@ -67,9 +67,14 @@
             padding: 10px;
         }
     }
+    & > button{
+        color: #fff;
+    }
     & button{
         display: flex;
         align-items: center;
+        
+
         &::before{
             content: '';
             display: inline-block;
