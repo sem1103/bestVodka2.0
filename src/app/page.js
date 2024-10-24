@@ -90,7 +90,7 @@ export default function Home() {
           <div className={s.intro__container}>
 
             <h1 className={s.prod__name}>BEST  <span>Fərdi Şəxsi Firması</span></h1>
-            <p>Продолжем традиции  1995 года</p>
+            <p>Продолжаем традиции с 1995 года</p>
             {/* <div className={s.prod__img}>
               <img src="/assets/img/bootle.webp" alt="" />
             </div> */}
@@ -220,8 +220,21 @@ export default function Home() {
 
         </section>
 
+        <section className={`${s.equipment}`}>
+        <h2 className={`container`}>
+        Современное оборудование   
+        </h2>
+            <div className={s.equipment__one}>
+              <div className={`${s.equipment__info}`}>
+              <h3>Cavagnino & Gatti</h3>
+              <p>Серия CG A-B-C от Cavagnino & Gatti представляет собой высококачественные автоматические машины для нанесения этикеток, разработанные для удовлетворения потребностей самых требовательных производств. Эти модели отличаются надежностью, высокой точностью и производительностью, обеспечивая идеально точное позиционирование этикеток на бутылках и другой упаковке.</p>
+              </div>
+            </div>
+         
+        </section>
+
         <section className={`${s.certificates} container`}>
-          <h2>Сертификаты</h2>
+          <h2>Сертификаты & Договора</h2>
           <div className={s.certificate__slider}>
             <ImgLightBox images={certImages} currentInd={currentInd} isShow={isShow} SetIsShow={SetIsShow} />
 

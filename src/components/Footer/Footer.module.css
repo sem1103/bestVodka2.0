@@ -1,6 +1,5 @@
 #footer {
-    background: rgb(110, 170, 179);
-    background: linear-gradient(180deg, rgba(110, 170, 179, 1) 28%, rgba(32, 125, 139, 1) 100%, rgba(198, 222, 225, 1) 100%);
+    background: #085561;
     padding: clamp(25px, 3vw, 50px);
     color: #fff;
     font-family: Oswald;

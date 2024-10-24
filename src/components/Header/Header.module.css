@@ -11,7 +11,7 @@
 
     &.fixed{
         box-shadow: 0 0 10px 2px #589da8;
-        background: #ffffff94;
+        background: #085561dd;
         & img{
             width: 80px;
         }

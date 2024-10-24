@@ -16,7 +16,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: #0000004b ;
+    background: #03414A70 ;
 
   }
 /*
@@ -373,13 +373,43 @@
  
 }
 
+.equipment{
+  padding: 75px 0;
+  & > div{
+  padding: 95px 10px;
+
+  background: url(./../../public/assets/img/equipment.png) top/cover;
+  }
+
+  & .equipment__one{
+    margin: 25px 0;
+    display: flex;
+    justify-content: end;
+
+    & h3{
+      font: 35px Oswald;
+      color: #085561;
+    }
+    & p{
+      font: 20px Oswald;
+    }
+  }
+
+  & .equipment__info{
+    width: 60%;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border-radius: 26px;
+  }
+}
+
 
 .new__prod {
-  padding: 25px 0;
+  padding: 45px 110px;
   & > div{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     & > div{
       flex-basis: calc((100% - 24px) / 2);
     }
@@ -392,6 +422,10 @@
     & p{
       margin: 15px 0 0 0;
       font: 20px Oswald ;
+    }
+
+    & h2{
+      color: #085561;
     }
   }
   

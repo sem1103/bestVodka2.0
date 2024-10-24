@@ -45,7 +45,7 @@ export default function Footer() {
                 
             </div>
 
-            <h6>Copyright © 2024. BEST - fərdi şəxsi firması</h6>
+            <h6>Copyright © 2024. BEST - Fərdi Şəxsi Firması</h6>
         </footer>
     )
 }
