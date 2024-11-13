@@ -1,5 +1,8 @@
+import Header from "@/components/Header/Header";
 import "./globals.css";
 import 'swiper/css';
+import Contacts from "@/components/Contacts/Contacts";
+import Footer from "@/components/Footer/Footer";
 
 
 export const metadata = {
@@ -10,13 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-     </head>
+      </head>
       <body>
+        <Header />
         {children}
-
+        <Contacts />
+        <Footer />
       </body>
     </html>
   );

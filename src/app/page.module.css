@@ -1,57 +1,29 @@
 .intro {
   min-height: 100vh;
-  padding: 145px 25px 45px  ;
+  padding: 145px 25px 45px;
   position: relative;
   perspective: 1000px;
   overflow: hidden;
-  background:  url('./../../public/assets/img/introBg.png') top/cover;
+  background: url('./../../public/assets/img/introBg.png') top/cover;
   display: flex;
   align-items: end;
   justify-content: center;
   text-align: center;
-  background-attachment: fixed;
 
 
-   &::before {
+  &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: #03414A70 ;
+    background: #03414A70;
 
   }
-/*
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('./../../public/assets/img/musk.png') top/cover;
-    inset: -5vw;
-    transform: rotateX(var(--moveY)) rotateY(var(--moveX));
-  } */
 
- 
+
 }
 
 .intro__container {
- 
 
-  /* transform-style: preserve-3d; */
-  /* &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 35%;
-    right: -100%;
-    width: 90px;
-    height: 110px;
-    background: url('./../../public/assets/img/birds.gif') center/contain;
-    animation-name: animBirdsRight;
-    animation-duration: 12s;
-    animation-iteration-count: 2;
-    animation-delay: 4s;
-    animation-timing-function: ease-out;
-
-  } */
 
   &::after {
     animation-name: animBirdsLeft;
@@ -84,17 +56,16 @@
     line-height: 1;
     margin: 0 0 15px 0;
     text-shadow: 0 0 10px #ffffff57;
-    & span{
+
+    & span {
       display: block;
       font-size: 40px;
     }
   }
 
   & p {
-    font: 400 30px Oswald;
+    font: 400 clamp(20px, 4vw, 30px) Oswald;
     text-shadow: 0 0 10px #ffffff57;
-
-  
     color: #fff;
     z-index: 1;
   }
@@ -175,7 +146,7 @@
     font-weight: 500;
     color: #207D8B;
     line-height: 1.2;
-    margin: 15px 0 30px 0;
+    margin: 15px 0 clamp(15px, 3vw, 30px) 0;
     text-transform: uppercase;
   }
 
@@ -186,6 +157,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.2;
+    font-size: clamp(14px, 2vw, 18px);
   }
 
   & .item__img {
@@ -207,7 +179,7 @@
   }
 
   & button {
-    font-size: 14px;
+    font-size: clamp(12px, 2vw, 14px);
     margin: 10px 0 0 0;
     position: relative;
     padding: 3px 0;
@@ -319,7 +291,7 @@
   }
 
   & h2 {
-    padding: 0 ;
+    padding: 0;
   }
 
   & p {
@@ -327,7 +299,7 @@
     position: relative;
 
     z-index: 1;
-    padding: 25px;
+    padding: clamp(10px, 3vw, 25px);
   }
 
   & h3 {
@@ -337,7 +309,9 @@
     z-index: 1;
     position: relative;
     text-shadow: 0 0 10px #fff;
-    & span{
+    margin: auto;
+
+    & span {
       position: absolute;
       font-size: clamp(120px, 30vw, 420px);
       top: 0;
@@ -351,18 +325,22 @@
 .certificates {
   padding: 25px 10px;
 }
-.certificate__slider{
-  margin: 10px 0 ;
+
+.certificate__slider {
+  margin: 10px 0;
   text-align: center;
-  & img{
+
+  & img {
     max-width: 320px;
     box-shadow: 0 0 10px #747474;
   }
-  & .cert__info{
-    font: 24px Oswald;
+
+  & .cert__info {
+    font: clamp(18px, 3vw, 24px) Oswald;
     text-align: center;
   }
-  & .item{
+
+  & .item {
     padding: 25px 0;
     display: flex;
     flex-direction: column;
@@ -370,32 +348,34 @@
     align-items: center;
     height: 100%;
   }
- 
+
 }
 
-.equipment{
-  padding: 75px 0;
-  & > div{
-  padding: 95px 10px;
+.equipment {
+  padding: clamp(35px, 4vw, 75px) 0;
 
-  background: url(./../../public/assets/img/equipment.png) top/cover;
+  &>div {
+    padding: clamp(10px, 6vw, 95px) 10px;
+
+    background: url(./../../public/assets/img/equipment.png) top/cover;
   }
 
-  & .equipment__one{
-    margin: 25px 0;
+  & .equipment__one {
+    margin: clamp(5px, 4vw, 25px) 0;
     display: flex;
     justify-content: end;
 
-    & h3{
-      font: 35px Oswald;
+    & h3 {
+      font: clamp(20px, 4vw, 35px) Oswald;
       color: #085561;
     }
-    & p{
-      font: 20px Oswald;
+
+    & p {
+      font: clamp(14px, 3vw, 20px) Oswald;
     }
   }
 
-  & .equipment__info{
+  & .equipment__info {
     width: 60%;
     padding: 25px;
     backdrop-filter: blur(10px);
@@ -405,30 +385,175 @@
 
 
 .new__prod {
-  padding: 45px 110px;
-  & > div{
+  padding: 45px clamp(15px, 6vw, 110px);
+
+  &>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & > div{
+    max-width: 900px;
+    &>div {
       flex-basis: calc((100% - 24px) / 2);
     }
-    & img{
-      max-width: 150px;
+
+    & img {
+      max-width: 250px;
       margin: auto;
       display: block;
     }
 
-    & p{
+    & p {
       margin: 15px 0 0 0;
-      font: 20px Oswald ;
+      font: clamp(16px, 3vw, 20px) Oswald;
     }
 
-    & h2{
+    & h2 {
       color: #085561;
     }
   }
-  
+
+}
+
+.our__production {
+  margin: 0 auto 55px auto;
+
+  & p {
+    font: 18px Oswald;
+    text-align: center;
+    margin: 15px 0 30px 0;
+
+  }
+
+  & .production__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 12px;
+    justify-content: center;
+
+    & .production__blog {
+      width: calc((100% - 24px) / 3);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border-radius: 16px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: #000;
+        opacity: .5;
+        transition: all 1.5s ease-in-out;
+      }
+      & img {
+        height: 100%;
+        object-fit: cover;
+      
+      }
+
+      &:hover {
+        & img {
+          scale: 1.2;
+          rotate: -3deg;
+        }
+
+        &::after {
+          opacity: .3;
+        }
+      }
+
+      & img {
+        width: 100%;
+        transition: all 1.5s ease-in-out;
+        position: absolute;
+        inset: 0;
+      }
+
+      & h3 {
+        font: clamp(18px, 3vw, 24px) Oswald;
+        position: relative;
+        padding: 30px 25px 120px 25px;
+        z-index: 5;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.production__modal {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  background: #a1cbe36a;
+  z-index: 9999;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s ease-in-out;
+  &.showModal{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  & .close__modal{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  & .production__modal__content {
+    max-width: 800px;
+    margin: 30px auto 30px auto;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #000;
+
+    & img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    & .production__modal__text {
+      scrollbar-width: thin;
+      overflow: auto;
+      height: 100%;
+      scrollbar-color: #e8372e97 #f1f1f1;
+      padding: 5px;
+     
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #e8372e97;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #e8382e;
+      }
+    }
+  }
+
+  & p {
+    font: clamp(14px, 2vw, 18px) Oswald;
+  }
 }
 
 
@@ -438,8 +563,6 @@
   .intro__container {
     & .prod__name {
       font-size: 34px;
-      top: 120px;
-      max-width: 300px;
       text-shadow: 0 0 10px #fff;
     }
 
@@ -472,9 +595,6 @@
       width: 100%;
     }
 
-    & .prod__name {
-      position: static;
-    }
 
     & .prod__desc {
       bottom: 100px;
@@ -487,58 +607,141 @@
     & p {
       margin: 0;
       max-width: 100%;
-
-      font-size: 18px;
+      font-size: clamp(14px, 3vw, 18px);
     }
 
+  }
+
+  .our__production{
+     & .production__wrapper{
+      justify-content: start;
+      & .production__blog{
+        width: calc((100% - 12px) / 2);
+        & h3{
+          padding: 20px 20px 60px 20px;
+        }
+      }
+     }
   }
 }
 
 
 
-@media only screen and (width < 1000px){
-  .about__us{
-    &>div{
+@media only screen and (width < 1000px) {
+  .about__us {
+    &>div {
       width: 100%;
     }
   }
-  
+
 
 
   .our__prods {
-    & .item__img{
+    & .item__img {
       height: 220px;
       min-width: 120px;
     }
-    & .item__info{
+
+    & .item__info {
       flex-basis: 60%;
     }
-    & .slider__item{
+
+    & .slider__item {
       padding-bottom: 40px;
     }
   }
 
- 
+
+  .production__modal {
+  
+    & .production__modal__content {
+      margin: 75px auto 30px auto;
+    }
+  
+
+  }
+
+
 }
 
 
 
-@media only screen and (width < 500px){
-  .about__us{
-    & h3 span{
-     position: static;
+@media only screen and (width < 500px) {
+  .intro{
+    min-height: 70vh;
+  }
+  .about__us {
+    & h3 span {
+      position: static;
     }
   }
 
   .our__slogan {
     height: 80vh;
-    &::after, &::before{
+
+    &::after,
+    &::before {
       height: 40vh;
     }
-    & .musk{
-      &::after, &::before{
+
+    & .musk {
+
+      &::after,
+      &::before {
         height: 40vh;
       }
     }
+
+    
   }
+  .our__production{
+    & .production__wrapper{
+     & .production__blog{
+       width: 90%;
+       margin: 0 auto;
+      & h3{
+        padding-bottom: 90px;
+      }
+     }
+    }
+ }
+
+ .new__prod > div{
+  flex-direction: column;
+  & .prod__img{
+    order: 0;
+  }
+  & > div{
+    order: 1;
+  }
+ }
+
+  .equipment {
+
+    &>div {
+      background: url(./../../public/assets/img/equipmentMob.png) bottom/cover;
+    }
+  
+
+    & .equipment__info{
+      flex: 1;
+      backdrop-filter: none;
+      padding: 0 10px 280px 10px;
+
+      & p{
+        min-height: 160px;
+      }
+    }
+   
+  }
+
+  .production__modal {
+  
+    & .production__modal__content {
+      margin: 75px 15px 30px 15px;
+    }
+  
+
+  }
+ 
 }

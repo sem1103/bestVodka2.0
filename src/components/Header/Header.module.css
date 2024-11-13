@@ -8,7 +8,7 @@
     backdrop-filter: blur(25px);
     transition: all .4s ease-in-out;
     box-shadow: 0 0 10px 2px #ffffff;
-
+    background: #085561c8;
     &.fixed{
         box-shadow: 0 0 10px 2px #589da8;
         background: #085561dd;
@@ -35,6 +35,21 @@
                 & a{
                     white-space: nowrap;
                     font-weight: 500;
+                   position: relative;
+                   &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    width: 0;
+                    transition: all .4s ease-in-out;
+                    height: 2px;
+                    border-radius: 5px;
+                    left: 0;
+                    background: #fff;
+                   }
+                   &:hover::after, &.active::after{
+                    width: 100%;
+                   }
                 }
             }
 
@@ -142,7 +157,8 @@
     width: 30px;
     box-sizing: border-box;
     height: 3px;
-    background: #8c8c8c;
+    background: #fff;
+    box-shadow: 0 0 3px #fff;
     border: 0;
     border-radius: 10px;
     position: absolute;
@@ -278,7 +294,7 @@
     .header {
         max-height: 80px;
         height: 100%;
-        background: #ffffff94;
+        background: #085561c8;
 
        & nav{
         justify-content: center;
@@ -324,7 +340,8 @@
         }
 
        & .stick{
-        background: #9d4646;
+        background: #ff6666;
+        box-shadow: 0 0 10px #d90f0f;
        }
     }
     

@@ -259,7 +259,7 @@ button {
 }
 
 h2{
-  font: 46px Oswald;
+  font: clamp(28px, 4vw, 46px) Oswald;
   color: #23323a;
 }
 
@@ -280,10 +280,11 @@ div.react-transform-wrapper{
 
 /*Slider*/
 div.our_prod__slider{
-  padding: 35px clamp(25px, 3vw, 45px);
+  padding: clamp(15px, 3vw, 35px) clamp(20px, 4vw, 40px);
   & .swiper-wrapper{
     max-width: 1250px;
     margin: 0 auto;
+    align-items: center;
   }
 
   & .swiper-slide-active {
@@ -303,6 +304,10 @@ div.our_prod__slider{
       opacity: 1;
     }
   }
+}
+
+main{
+  padding-top: 140px;
 }
 
 .certificate__slider{
