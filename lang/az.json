@@ -1,0 +1,10 @@
+{
+    "header" : {
+        "homePage" : "Ana səhifə",
+        "productsPage" : "Məhsullar",
+        "partnersPage" : "Tərəfdaşlarımız",
+        "contactPage" : "Əlaqə",
+        "aboutPage" : "Haqqımızda",
+        "contactUsBtn": "Bizimlə əlaqə!"
+    }
+}

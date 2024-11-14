@@ -2,32 +2,51 @@
 import Link from 'next/link'
 import s from './Header.module.css'
 import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import { startTransition } from 'react';
 
 
 export default function Header() {
-    const pathname = usePathname(); 
+    const pathname = usePathname();
+    let lang = useLocale();
+    const t = useTranslations();
+    const router = useRouter();
+
 
     const [headerFixed, setHeaderFixed] = useState(false);
     const isActive = (path) => pathname === path;
 
-    
-    const burgerMenuHandler = () =>{
+
+    const burgerMenuHandler = () => {
         document.body.classList.toggle(s.active__burger)
-        if(!document.body.classList.contains(s.active__burger)){
+        if (!document.body.classList.contains(s.active__burger)) {
             document.body.classList.add(s.deactive__burger)
-        } else  document.body.classList.remove(s.deactive__burger)
+        } else document.body.classList.remove(s.deactive__burger)
     }
 
     const scrollHandler = () => {
         if (window.scrollY > 0) setHeaderFixed(true)
         else setHeaderFixed(false)
-      }
-    
+    }
+
 
     useEffect(() => {
         window.addEventListener('scroll', scrollHandler)
     }, []);
+
+
+    const changeLanguage = (lg) => {
+        
+        let language = lg;
+        if (!pathname) return '/';
+        const segment = pathname.split('/');
+        segment[1] = language;
+        const newUrl = segment.join('/');
+        startTransition(() => {
+            router.push(newUrl);
+        });
+    };
 
 
     return (
@@ -35,40 +54,54 @@ export default function Header() {
 
             <nav>
                 <Link href='/' className={s.logo}>
-                    <img src="./assets/img/logo.svg" alt="" width={'120px'} />
+                    <img src="/assets/img/logo.svg" alt="" width={'120px'} />
                 </Link>
                 <ul>
                     <li><Link
-                    className={isActive('/') ? s.active : ''}
-                     href='/' onClick={() => burgerMenuHandler()}>Главная</Link></li>
+                        className={isActive('/') ? s.active : ''}
+                        href='/' onClick={() => burgerMenuHandler()}>{t('header.homePage')}</Link></li>
                     <li><Link
-                    className={isActive('/products') ? s.active : ''}
-                    href='/products' onClick={() => burgerMenuHandler()}>Продукция</Link></li>
+                        className={isActive('/products') ? s.active : ''}
+                        href='/products' onClick={() => burgerMenuHandler()}>{t('header.productsPage')}</Link></li>
                     <li><Link
-                    className={isActive('/partners') ? s.active : ''}
-                    href='/partners' onClick={() => burgerMenuHandler()}>Партнеры</Link></li>
-                    <li><Link 
-                    className={isActive('/contacts') ? s.active : ''}
-                    href='/contacts' onClick={() => burgerMenuHandler()}>Контакты</Link></li>
+                        className={isActive('/partners') ? s.active : ''}
+                        href='/partners' onClick={() => burgerMenuHandler()}>{t('header.partnersPage')}</Link></li>
                     <li><Link
-                    className={isActive('/aboutUs') ? s.active : ''}
-                    href='/aboutUs' onClick={() => burgerMenuHandler()}>О нас</Link></li>
-                    <li><button className='button' onClick={() => burgerMenuHandler()}>Связаться с нами!</button></li>
+                        className={isActive('/contacts') ? s.active : ''}
+                        href='/contacts' onClick={() => burgerMenuHandler()}>{t('header.contactPage')}</Link></li>
+                    <li><Link
+                        className={isActive('/aboutUs') ? s.active : ''}
+                        href='/aboutUs' onClick={() => burgerMenuHandler()}>{t('header.aboutPage')}</Link></li>
+                    <li><button className='button' onClick={() => burgerMenuHandler()}>{t('header.contactUsBtn')}</button></li>
                     <li className={s.lang__switch}>
-                        <button className={s.ru}>
-                            RU
+                        <button className={`${lang == 'az' ? s.az : lang == 'ru' ? s.ru : s.en}`}>
+                            {lang == 'az' ? 'AZ' : lang == 'ru' ? 'RU' : 'EN'}
                         </button>
                         <ul className={s.langs}>
-                            <li>
-                                <button className={s.az}>
-                                    AZ
-                                </button>
-                            </li>
-                            <li>
-                                <button className={s.en}>
-                                    EN
-                                </button>
-                            </li>
+                            {
+                                lang != 'az' &&
+                                <li>
+                                    <button className={s.az} onClick={() => changeLanguage('az')}>
+                                        AZ
+                                    </button>
+                                </li>
+                            }
+                            {
+                                lang != 'en' &&
+                                <li>
+                                    <button className={s.en} onClick={() => changeLanguage('en')}>
+                                        EN
+                                    </button>
+                                </li>
+                            }
+                            {
+                                lang != 'ru' &&
+                                <li>
+                                    <button className={s.ru} onClick={() => changeLanguage('ru')}>
+                                        RU
+                                    </button>
+                                </li>
+                            }
                         </ul>
                     </li>
                 </ul>

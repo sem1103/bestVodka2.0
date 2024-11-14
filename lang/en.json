@@ -1,0 +1,11 @@
+{
+    "header" : {
+        "homePage" : "Home",
+        "productsPage" : "Products",
+        "partnersPage" : "Partners",
+        "contactPage" : "Contacts",
+        "aboutPage" : "About Us",
+        "contactUsBtn": "Contact Us!"
+
+    }
+}

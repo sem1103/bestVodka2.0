@@ -1,0 +1,11 @@
+{
+    "header" : {
+        "homePage" : "Главная",
+        "productsPage" : "Продукция",
+        "partnersPage" : "Партнёры",
+        "contactPage" : "Контакты",
+        "aboutPage" : "О нас",
+        "contactUsBtn": "Связаться с нами!"
+
+    }
+}
