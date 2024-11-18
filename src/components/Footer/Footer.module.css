@@ -59,6 +59,12 @@
     margin: 5px;
     transition: 0.3s;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    & a{
+      position: absolute;
+      inset: 0;
+    }
   }
   
   .socialBtn svg {
@@ -82,6 +88,15 @@
     padding: 2px;
     width: 80px;
   }
+  #github{
+    &:hover{
+      width: 190px;
+      & span{
+        width: 130px;
+      }
+    }
+  }
+
   
   #twitter svg {
     fill: #1da1f2;
@@ -91,7 +106,12 @@
     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
     border-radius: 6px;
 }
-  
+ 
+#github{
+  & span{
+    white-space: nowrap;
+  }
+}
   #github svg {
     background: #00d757;
    
@@ -106,5 +126,12 @@
             gap: 25px;
 
         }
+    }
+  }
+
+  @media (width < 500px) {
+    .socialLinks{
+      flex-direction: column;
+      align-items: start;
     }
   }

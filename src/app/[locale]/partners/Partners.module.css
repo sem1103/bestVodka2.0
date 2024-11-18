@@ -20,6 +20,13 @@
         &:hover{
             box-shadow: 0 0 10px #fff;
         }
+        & .partner__img{
+            height: 90px;
+            margin: 0 0 15px 0;
+        }
+        & img{
+            max-width: 90px;
+        }
         & a{
             position: absolute;
             inset: 0;

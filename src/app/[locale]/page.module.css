@@ -4,7 +4,7 @@
   position: relative;
   perspective: 1000px;
   overflow: hidden;
-  background: url('./../../../public/assets/img/introBg.png') top/cover;
+  background: url('./../../../public/assets/img/introBg.webp') top/cover;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -114,7 +114,7 @@
   display: flex;
   justify-content: space-between;
   background: #fff;
-  padding: clamp(25px, 3vw, 45px) 30px 20px clamp(25px, 3vw, 60px);
+  padding: clamp(25px, 3vw, 45px) 30px clamp(25px, 3vw, 45px) clamp(25px, 3vw, 60px);
   border-radius: 26px;
   transition: all .4s ease-in-out;
 
@@ -205,6 +205,8 @@
 
 
 
+
+
 .about__us {
   padding: 25px 10px;
   font: 20px/1.5 Oswald;
@@ -231,15 +233,17 @@
   }
 
   & h3 {
-    font: 64px/1.1 Oswald;
+    font: clamp(35px, 5vw, 64px)/1.1 Oswald;
     color: rgb(35, 50, 58);
     flex: 1;
     z-index: 1;
     position: relative;
     text-shadow: 0 0 10px #fff;
     margin: auto;
-
-    & span {
+    display: flex;
+    align-items: start;
+   
+    & .numb {
       position: absolute;
       font-size: clamp(120px, 30vw, 420px);
       top: 0;
@@ -247,6 +251,11 @@
       z-index: -1;
       opacity: .7;
     }
+    & span{
+      text-transform: capitalize;
+      display: inline-block;
+    }
+   
   }
 }
 
@@ -258,9 +267,14 @@
   margin: 10px 0;
   text-align: center;
 
-  & img {
+  & .cert__img{
     max-width: 320px;
+
+  }
+  & img {
+    width: 100%;
     box-shadow: 0 0 10px #747474;
+    cursor: pointer;
   }
 
   & .cert__info {
@@ -275,6 +289,21 @@
     justify-content: end;
     align-items: center;
     height: 100%;
+    position: relative;
+   
+  }
+  & h4{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    & a{
+      opacity: .7;
+      padding: 10px;
+      transition: all .4s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
   }
 
 }
@@ -313,20 +342,25 @@
 
 
 .new__prod {
-  padding: 45px clamp(15px, 6vw, 110px);
+  padding: 45px clamp(15px, 6vw, 80px);
 
   &>div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 900px;
+    gap: 24px;
     &>div {
       flex-basis: calc((100% - 24px) / 2);
     }
+    & .prod__img{
+      flex-basis: initial;
+      max-width: 240px;
+    }
 
     & img {
-      max-width: 250px;
       margin: auto;
+      width: 100%;
       display: block;
     }
 
@@ -346,7 +380,7 @@
   margin: 0 auto 55px auto;
 
   & p {
-    font: 18px Oswald;
+    font: clamp(14px, 3vw, 20px) Oswald;
     text-align: center;
     margin: 15px 0 30px 0;
 
@@ -409,73 +443,49 @@
 }
 
 
-.production__modal {
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(10px);
-  background: #a1cbe36a;
-  z-index: 9999;
+
+
+
+.production__modal__content {
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
   display: flex;
-  opacity: 0;
-  pointer-events: none;
-  transition: all .5s ease-in-out;
-  &.showModal{
-    opacity: 1;
-    pointer-events: auto;
+  flex-direction: column;
+  overflow: hidden;
+  
+
+  & img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
   }
 
-  & .close__modal{
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    box-shadow: 0 0 10px #fff;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-  }
-  & .production__modal__content {
-    max-width: 800px;
-    margin: 30px auto 30px auto;
-    background: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 25px;
-    box-shadow: 0 0 10px #000;
-
-    & img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 0 0 20px 0;
+  & .production__modal__text {
+    scrollbar-width: thin;
+    overflow: auto;
+    height: 100%;
+    scrollbar-color: #e8372e97 #f1f1f1;
+    padding: 5px;
+    letter-spacing: .5px;
+    &::-webkit-scrollbar {
+      width: 5px;
     }
 
-    & .production__modal__text {
-      scrollbar-width: thin;
-      overflow: auto;
-      height: 100%;
-      scrollbar-color: #e8372e97 #f1f1f1;
-      padding: 5px;
-     
-      &::-webkit-scrollbar {
-        width: 5px;
-      }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
 
-      &::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 10px;
-      }
+    &::-webkit-scrollbar-thumb {
+      background: #e8372e97;
+      border-radius: 10px;
+    }
 
-      &::-webkit-scrollbar-thumb {
-        background: #e8372e97;
-        border-radius: 10px;
-      }
-
-      &::-webkit-scrollbar-thumb:hover {
-        background: #e8382e;
-      }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #e8382e;
     }
   }
 
@@ -483,7 +493,6 @@
     font: clamp(14px, 2vw, 18px) Oswald;
   }
 }
-
 
 /*Media*/
 
@@ -579,15 +588,12 @@
     }
   }
 
-
-  .production__modal {
-  
-    & .production__modal__content {
-      margin: 75px auto 30px auto;
+  .slider__item .prod__type {
+    &::before {
+      width: 15px;
     }
-  
-
   }
+
 
 
 }
@@ -599,7 +605,7 @@
     min-height: 70vh;
   }
   .about__us {
-    & h3 span {
+    & h3 .numb {
       position: static;
     }
   }
@@ -663,13 +669,21 @@
    
   }
 
-  .production__modal {
   
-    & .production__modal__content {
-      margin: 75px 15px 30px 15px;
+ 
+
+  .certificate__slider {
+  
+    & .item {
+      
+      & .print{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
     }
   
-
   }
- 
+
+
 }

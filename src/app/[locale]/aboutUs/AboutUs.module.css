@@ -36,6 +36,7 @@
 
     .about__us .about__section:not(:first-child) .about__img {
         order: 2;
+        width: 100%;
       }
       
       .about__us .about__section:not(:first-child) .about__text {

@@ -24,17 +24,9 @@
         right: 25px;
         box-shadow: 0 0 10px #fff;
         border-radius: 50%;
-        width: 34px;
-        height: 34px;
+        width: 35px;
+        height: 35px;
         z-index: 999;
     }
 }
 
-@media (width < 500px) {
-    .wrapper{
-        & .close{
-            width: 30px;
-            height: 30px;
-        }
-    }
-}

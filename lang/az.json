@@ -6,5 +6,37 @@
         "contactPage" : "Əlaqə",
         "aboutPage" : "Haqqımızda",
         "contactUsBtn": "Bizimlə əlaqə!"
+    },
+    "introSubtitle": "2000-ci ildən bəri ənənələrimizi davam etdiririk",
+    "homeTitle1" : "Bizim məhsullar",
+    "homeTitle2" : "Haqqımızda",
+    "homeTitle3" : "Müasir avadanlıq",
+    "homeTitle4" : "Bizim İstehsal",
+    "homeTitle5" : "Sertifikatlar & Müqavilələr",
+    "productsSlider": {
+        "productType": "Araq",
+        "detailsBtn": "Daha ətraflı"
+    },
+    "homeAbout": {
+        "text": "\"Best - fərdi şəxsi firması\" yüksək keyfiyyətli araqın istehsalı ilə məşğuldur və ənənəvi reseptləri müasir texnologiyalarla birləşdirir. Tərkib hissələrinin unikal seçimi və dəqiq distillə prosesi hər bir şüşədə təmiz və zəngin dad təmin edir. Biz öz peşəkarlığımızla fəxr edirik və hətta ən tələbkar zövqləri belə razı sala biləcək məhsullar təklif etməyə çalışırıq. Detallara diqqət və mükəmməlliyə canatma işimizin əsas prinsipləridir.",
+        "experience": "İl qüsursuz fəaliyyət"
+    },
+    "equipmentText": "Cavagnino & Gatti-nin CG A-B-C seriyası ən tələbkar istehsalatların ehtiyaclarını qarşılamaq üçün nəzərdə tutulmuş yüksək keyfiyyətli avtomatik etiketləmə maşınlarıdır. Bu modellər etibarlılığı, yüksək dəqiqliyi və məhsuldarlığı ilə seçilir, butulkalar və digər qablaşdırmalarda etiketlərin mükəmməl şəkildə yerləşdirilməsini təmin edir." ,
+    "aboutUsPage": {
+        "text1": "\"Best Spirits\" şirkəti ənənəvi formulaları müasir texnologiyalarla birləşdirərək yüksək keyfiyyətli araq istehsalı ilə məşğuldur. Tərkibləri seçmək üçün unikal yanaşmamız və diqqətli distillə prosesi hər şüşənin təmiz və zəngin dadını təmin edir. Biz öz bacarıqlarımızla fəxr edirik və hətta ən tələbkar biliciləri də qane edəcək məhsullar təklif etməyə çalışırıq. Detallara diqqət və mükəmməlliyə can atmaq işimizin əsas prinsipləridir." ,
+        "text2": " \"Best Spirits\" şirkəti yüksək keyfiyyətli araq istehsalında tanınmış liderdir, özünəməxsus resepti və istehsalın hər mərhələsinə diqqəti sayəsində bazarda özünü sübut etmişdir. Distillə ənənəsinə və yeniliyinə riayət edərək yalnız ən yaxşı təbii maddələrdən istifadə edirik. <br /><br /> Şirkətimiz tanınmış \"Nemiroff\" brendi ilə çoxillik və uğurlu əməkdaşlıqdan qürur duyur. Bu tərəfdaşlıq birliyi tariximizdə bir mərhələ oldu, təcrübə mübadiləsi aparmağa, yeni texnologiyalar tətbiq etməyə və araq istehsalında yeni zirvələrə çatmağa imkan verdi. Bu əməkdaşlıq sayəsində müştərilərimizə ən yüksək keyfiyyət və dad standartlarına cavab verən məhsullar təqdim edə bildik. <br /><br /> Mükəmməlliyə can atmağa davam edirik ki, hər bir məhsulumuz müştərilərə unudulmaz hisslər və qüsursuz keyfiyyətinə inam bəxş etsin."
+
+    },
+    "contact": {
+        "text1": "Ünvanımız haradadır?",
+        "address": "Azərbaycan, Az1014, Bakı Şəhəri, Sabunçu",
+        "text2": "Suallarınızla bizə müraciət edin",
+        "text3": "Daha ətraflı məlumat üçün"
+    },
+    "footer" :{
+        "navTitle": "Səhifələrimiz",
+        "slogan" : "Təbiətdən ilhamlanmış, zövq almaq üçün yaradılmışdır.",
+        "copy": "Copyright © 2024. BEST - Fərdi Şəxsi Firması"
+
     }
 }

@@ -26,7 +26,7 @@ export default function Loading({hide}){
     return(
         <div className={`loader ${hide ? 'hide' : ''}`}>
            <div>
-           <img src="./assets/img/logo.svg" alt="" />
+           <img src="/assets/img/logo.svg" alt="" />
 
            <p className='numb__count'>{count}</p>
            </div>

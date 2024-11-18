@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import s from './Header.module.css'
 import { useEffect, useState } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter, useSelectedLayoutSegment } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { startTransition } from 'react';
 
@@ -10,12 +10,15 @@ import { startTransition } from 'react';
 export default function Header() {
     const pathname = usePathname();
     let lang = useLocale();
+    const segm = useSelectedLayoutSegment()
     const t = useTranslations();
     const router = useRouter();
 
+    console.log(segm);
+    
 
     const [headerFixed, setHeaderFixed] = useState(false);
-    const isActive = (path) => pathname === path;
+    const isActive = (path) => segm === path;
 
 
     const burgerMenuHandler = () => {
@@ -58,21 +61,21 @@ export default function Header() {
                 </Link>
                 <ul>
                     <li><Link
-                        className={isActive('/') ? s.active : ''}
+                        className={isActive(null) ? s.active : ''}
                         href='/' onClick={() => burgerMenuHandler()}>{t('header.homePage')}</Link></li>
                     <li><Link
-                        className={isActive('/products') ? s.active : ''}
+                        className={isActive('products') ? s.active : ''}
                         href='/products' onClick={() => burgerMenuHandler()}>{t('header.productsPage')}</Link></li>
                     <li><Link
-                        className={isActive('/partners') ? s.active : ''}
+                        className={isActive('partners') ? s.active : ''}
                         href='/partners' onClick={() => burgerMenuHandler()}>{t('header.partnersPage')}</Link></li>
                     <li><Link
-                        className={isActive('/contacts') ? s.active : ''}
+                        className={isActive('contacts') ? s.active : ''}
                         href='/contacts' onClick={() => burgerMenuHandler()}>{t('header.contactPage')}</Link></li>
                     <li><Link
-                        className={isActive('/aboutUs') ? s.active : ''}
+                        className={isActive('aboutUs') ? s.active : ''}
                         href='/aboutUs' onClick={() => burgerMenuHandler()}>{t('header.aboutPage')}</Link></li>
-                    <li><button className='button' onClick={() => burgerMenuHandler()}>{t('header.contactUsBtn')}</button></li>
+                    <li><a href='https://wa.me/994502016362' target='_blank' className='button' onClick={() => burgerMenuHandler()}>{t('header.contactUsBtn')}</a></li>
                     <li className={s.lang__switch}>
                         <button className={`${lang == 'az' ? s.az : lang == 'ru' ? s.ru : s.en}`}>
                             {lang == 'az' ? 'AZ' : lang == 'ru' ? 'RU' : 'EN'}
