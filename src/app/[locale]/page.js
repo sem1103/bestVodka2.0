@@ -100,9 +100,8 @@ export default function Home() {
           modules={[Autoplay]}
           breakpoints={{
             1100: {
-              slidesPerView: 1.7,
+              slidesPerView: 1.9,
               spaceBetween: 50
-
             }
           }}
         >
