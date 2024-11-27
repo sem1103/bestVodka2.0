@@ -375,7 +375,7 @@ div.new__prod__modal{
   width: 250px;
   height: 250px;
  }
- .bg{
+ & .bg{
   position: absolute;
   top: 0;
   left: 0;
