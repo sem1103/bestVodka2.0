@@ -443,6 +443,22 @@ div.new__prod__modal{
   box-shadow: 0 0 10px 3px #fff;
 
 }
+.show__new__prod{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: #207D8B;
+  color: #fff;
+  padding: 10px 25px;
+  transition: all .4s ease-in-out;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 10px 1px #207D8B;
+  font:  18px Oswald;
+  &.hide__btn{
+    opacity: 0;
+  }
+}
 
 .our__production {
   margin: 0 auto 55px auto;

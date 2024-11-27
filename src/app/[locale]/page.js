@@ -57,7 +57,7 @@ export default function Home() {
 
     <>
       <Loading hide={isLoad} />
-
+      
 
       <div className={s.intro} ref={introRef}>
 
@@ -71,6 +71,7 @@ export default function Home() {
       </div>
 
      
+      <button onClick={() => setNewProdModal(!newProdModal)} className={`${s.show__new__prod} ${newProdModal ? s.hide__btn : ''}`}>Новинка!</button>
 
       <Modal open={newProdModal} onCancel={() => setNewProdModal(!newProdModal)}  footer={false} className={`${s.new__prod__modal} new__prod__modal`}
       wrapClassName={s.ant__modal} 
