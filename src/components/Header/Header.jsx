@@ -14,7 +14,6 @@ export default function Header() {
     const t = useTranslations();
     const router = useRouter();
 
-    console.log(segm);
     
 
     const [headerFixed, setHeaderFixed] = useState(false);
@@ -40,7 +39,6 @@ export default function Header() {
 
 
     const changeLanguage = (lg) => {
-        
         let language = lg;
         if (!pathname) return '/';
         const segment = pathname.split('/');

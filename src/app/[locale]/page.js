@@ -23,6 +23,7 @@ export default function Home() {
   const [sliderModal, setSliderModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState({})
   const swiperRef = useRef(null);
+  const [newProdModal, setNewProdModal] = useState(false);
 
 
   const { fetchMainProducts, mainSlider, ourProductionsBlog, certificatesAndAgree, mainProduct, fetchOurProductionBlog, fetchCertificateAndAgree } = useDataStore();
@@ -34,6 +35,9 @@ export default function Home() {
     if (!Object.keys(ourProductionsBlog).length) fetchOurProductionBlog();
     if (!certificatesAndAgree.length) fetchCertificateAndAgree();
 
+    setTimeout(() => {
+      setNewProdModal(true)
+    }, 4000);
 
   }, []);
 
@@ -66,7 +70,19 @@ export default function Home() {
         </div>
       </div>
 
+     
+
+      <Modal open={newProdModal} onCancel={() => setNewProdModal(!newProdModal)}  footer={false} className={`${s.new__prod__modal} new__prod__modal`}
+      wrapClassName={s.ant__modal} 
+      style={{ top: '20px', height: '80vh' }} 
+      >
       <section className={s.new__prod}>
+        <div className={s.box}>
+        <h6>Новинка</h6>
+        </div>
+        <div className={s.bg}>
+        <img src="/assets/img/bg.png" alt="" />
+        </div>
         <div className='container'>
           <div className={s.prod__info}>
             <h2>{
@@ -81,6 +97,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </Modal>
 
       <section className={`${s.our__prods}`}>
         <h2 className='container'>

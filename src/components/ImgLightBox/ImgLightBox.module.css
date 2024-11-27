@@ -10,6 +10,9 @@
     opacity: 0;
     pointer-events: none;
     transition: all .4s ease-in-out;
+    & img{
+        max-width: 400px;
+    }
     &.show{
         pointer-events: auto;
         opacity: 1;

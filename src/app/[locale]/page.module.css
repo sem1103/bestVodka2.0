@@ -339,38 +339,103 @@
     border-radius: 26px;
   }
 }
+div.new__prod__modal{
+  width: 80% !important;
+  & > div > div{
+    border-radius: 60px !important;
+    background: transparent !important;
+  }
+  & > div{
+    box-shadow: 0 0 10px 2px #fff;
+    border-radius: 60px !important;
+    overflow: hidden;
+    background: none;
+
+  }
+}
 
 
 .new__prod {
-  padding: 45px clamp(15px, 6vw, 80px);
+  padding: 10px clamp(5px, 2vw, 40px);
+  max-width: 900px;
+  margin: 0 auto;
+ & h6{
+  font: 600 clamp(26px, 3vw, 30px) Oswald;
+  background-color: #d66969;
+  color: #fff;
+  text-align: center;
+  rotate: -45deg;
+  width: 100%;
+  box-shadow: 0 0 10px 2px #d66969;
+ }
+ .box{
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  width: 250px;
+  height: 250px;
+ }
+ .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  & img{
+    width: 100%;
+    height: 100%;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    transform: skew(-45deg) translateX(50%);
+    box-shadow: 0 0 10px 3px #fff;
 
+  }
+ }
   &>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
     gap: 24px;
-    &>div {
-      flex-basis: calc((100% - 24px) / 2);
-    }
+   
     & .prod__img{
       flex-basis: initial;
       max-width: 240px;
     }
 
+    & .prod__img{
+      max-width: 250px;
+    }
     & img {
       margin: auto;
       width: 100%;
       display: block;
+    
     }
 
+    & .prod__info{
+      backdrop-filter: blur(10px);
+      background: #5857576a;
+      padding: 20px 30px;
+      border-radius: 20px;
+    }
     & p {
       margin: 15px 0 0 0;
       font: clamp(16px, 3vw, 20px) Oswald;
+      color: #ffffff;
     }
 
     & h2 {
-      color: #085561;
+      color: #fff;
     }
   }
 
@@ -601,6 +666,10 @@
 
 
 @media only screen and (width < 500px) {
+
+  div.new__prod__modal{
+    width: 90% !important;
+  }
   .intro{
     min-height: 70vh;
   }

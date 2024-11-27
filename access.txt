@@ -3,3 +3,8 @@ Login: fastuser
 Pass: 4rQ90wFIR7aGj6yXn1
 -------------------------------
 
+Site Admin Panel - https://apibestspirits.ru/
+Login: admin
+Pass: Admin123
+-------------------------------
+
