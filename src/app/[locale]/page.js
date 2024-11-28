@@ -3,7 +3,6 @@ import s from './page.module.css'
 
 import { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ImgLightBox from '@/components/ImgLightBox/ImgLightBox';
 import Loading from './loading';
 import useDataStore from '../../../store/dataSlice';
 import { useLocale, useTranslations } from 'next-intl';
@@ -15,8 +14,7 @@ import { Autoplay } from 'swiper/modules';
 export default function Home() {
   const t = useTranslations()
   const introRef = useRef(null);
-  const [currentInd, setCurrentInd] = useState(null)
-  const [isShow, SetIsShow] = useState(false);
+
   const [isLoad, SetIsLoad] = useState(false)
   const [closedModal, setClosedModal] = useState(false)
   const [activeProduction, setActiveProduction] = useState(false);
@@ -26,14 +24,13 @@ export default function Home() {
   const [newProdModal, setNewProdModal] = useState(false);
 
 
-  const { fetchMainProducts, mainSlider, ourProductionsBlog, certificatesAndAgree, mainProduct, fetchOurProductionBlog, fetchCertificateAndAgree } = useDataStore();
+  const { fetchMainProducts, mainSlider, ourProductionsBlog, mainProduct, fetchOurProductionBlog } = useDataStore();
 
   const local = useLocale()
 
   useEffect(() => {
     if (!Object.keys(mainProduct).length) fetchMainProducts();
     if (!Object.keys(ourProductionsBlog).length) fetchOurProductionBlog();
-    if (!certificatesAndAgree.length) fetchCertificateAndAgree();
 
     setTimeout(() => {
       setNewProdModal(true)
@@ -45,7 +42,6 @@ export default function Home() {
 
 
 
-  const certImages = certificatesAndAgree.map(item => (item.img));
 
   useEffect(() => {
     setTimeout(() => {
@@ -71,7 +67,7 @@ export default function Home() {
       </div>
 
      
-      <button onClick={() => setNewProdModal(!newProdModal)} className={`${s.show__new__prod} ${newProdModal ? s.hide__btn : ''}`}>Новинка!</button>
+      <button onClick={() => setNewProdModal(!newProdModal)} className={`${s.show__new__prod} ${newProdModal ? s.hide__btn : ''}`}>{t('productPlate')}!</button>
 
       <Modal open={newProdModal} onCancel={() => setNewProdModal(!newProdModal)}  footer={false} className={`${s.new__prod__modal} new__prod__modal`}
       wrapClassName={s.ant__modal} 
@@ -79,11 +75,9 @@ export default function Home() {
       >
       <section className={s.new__prod}>
         <div className={s.box}>
-        <h6>Новинка</h6>
+        <h6>{t('productPlate')}</h6>
         </div>
-        <div className={s.bg}>
-        <img src="/assets/img/bg.png" alt="" />
-        </div>
+      
         <div className='container'>
           <div className={s.prod__info}>
             <h2>{
@@ -189,7 +183,7 @@ export default function Home() {
           </p>
         </div>
         <h3>
-  <span className={s.numb}>20</span>
+  <span className={s.numb}>18</span>
   <span
     dangerouslySetInnerHTML={{
       __html: t('homeAbout.experience')
@@ -264,59 +258,7 @@ export default function Home() {
 
       
 
-      <section className={`${s.certificates} container`}>
-        <h2>
-          {t('homeTitle5')}
-        </h2>
-        <div className={s.certificate__slider}>
-          <ImgLightBox images={certImages} currentInd={currentInd} isShow={isShow} SetIsShow={SetIsShow} />
-
-
-          <Swiper
-            spaceBetween={10}
-            slidesPerView={1.1}
-            className='certificate__slider'
-            
-
-            breakpoints={{
-              800: {
-                slidesPerView: 2.5,
-                spaceBetween: 20
-              }
-            }}
-          >
-            {
-              certificatesAndAgree.map((item, index) => {
-                return (
-                  <SwiperSlide >
-                    <div className={s.item}>
-                      <div className={s.cert__img} 
-                      onClick={() => {
-                        setCurrentInd(index);
-                        SetIsShow(true);
-                      }}>
-                        <img src={item.img} alt="" />
-                      </div>
-                      <h4 className={s.cert__info}>
-                        {
-                          item[local].name
-                        }
-
-<a href={item.pdf} target='_blank'>
-<svg width={50} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 10.5H15V8H9V10.5H8.5C7.67 10.5 7 11.17 7 12V15H9V17H15V15H17V12C17 11.17 16.33 10.5 15.5 10.5ZM10 9H14V10.5H10V9ZM14 16V14H10V16H14ZM15 14V13H9.00001V14H8.00001V12C8.00001 11.725 8.22501 11.5 8.50001 11.5H15.5C15.775 11.5 16 11.725 16 12V14H15ZM14.5 12.25C14.5 11.9739 14.7239 11.75 15 11.75C15.2761 11.75 15.5 11.9739 15.5 12.25C15.5 12.5261 15.2761 12.75 15 12.75C14.7239 12.75 14.5 12.5261 14.5 12.25Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill="#000000"></path> </g></svg>
-</a>
-                      </h4>
-                    </div>
-                  </SwiperSlide>
-                )
-              })
-            }
-
-
-          </Swiper>
-
-        </div>
-      </section>
+   
 
 
     </>

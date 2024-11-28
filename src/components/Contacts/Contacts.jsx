@@ -36,6 +36,8 @@ export default function Contacts() {
                 <h3>
                 {t('contact.text3')}
                 </h3>
+                <a href="https://wa.me/994124502427">+994(12) 450-24-27</a>
+                <br />
                 <a href="https://wa.me/994502016362">+994(50) 201-63-62</a>
               
             </div>
