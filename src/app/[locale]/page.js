@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
      
-      <button onClick={() => setNewProdModal(!newProdModal)} className={`${s.show__new__prod} ${newProdModal ? s.hide__btn : ''}`}>{t('productPlate')}!</button>
+      
 
       <Modal open={newProdModal} onCancel={() => setNewProdModal(!newProdModal)}  footer={false} className={`${s.new__prod__modal} new__prod__modal`}
       wrapClassName={s.ant__modal} 
@@ -263,7 +263,7 @@ export default function Home() {
 
    
 
-
+      <button onClick={() => setNewProdModal(!newProdModal)} className={`${s.show__new__prod} ${newProdModal ? s.hide__btn : ''}`}>{t('productPlate')}!</button>
     </>
 
   );

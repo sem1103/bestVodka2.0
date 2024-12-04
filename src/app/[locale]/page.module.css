@@ -373,19 +373,34 @@ background: linear-gradient(133deg, #006c77a2 0%, rgba(255,255,255,1) 79%);
 }
 
 .show__new__prod{
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: sticky;
+  bottom: 25px;
+  left: 5px;
   z-index: 999;
   background: #207D8B;
   color: #fff;
   padding: 10px 25px;
   transition: all .4s ease-in-out;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   box-shadow: 0 0 10px 1px #207D8B;
   font:  18px Oswald;
+  margin: 0 0 5px 0;
+  animation: float 2s ease-in-out infinite;
+
   &.hide__btn{
     opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
