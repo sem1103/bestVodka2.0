@@ -252,7 +252,10 @@ export default function Home() {
           <div className={s.production__modal__text}>
             <div dangerouslySetInnerHTML={{ __html: activeProduction[local]?.text }} />
           </div>
-
+{
+  console.log(activeProduction[local]?.text )
+  
+}
         </div>
       </Modal>
 

@@ -483,6 +483,15 @@ background: linear-gradient(133deg, #006c77a2 0%, rgba(255,255,255,1) 79%);
     scrollbar-color: #e8372e97 #f1f1f1;
     padding: 5px;
     letter-spacing: .5px;
+    & ul, & ol{
+      list-style: initial;
+      padding: 5px 0 5px 20px;
+      font: clamp(14px, 2vw, 18px) Oswald;
+    }
+    & ol{
+      list-style-type: decimal;
+      
+    }
     &::-webkit-scrollbar {
       width: 5px;
     }
