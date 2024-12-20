@@ -174,7 +174,7 @@
       transition: all .6s ease-in-out;
       transform: rotate(12deg);
       opacity: 0.5;
-
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.285));
     }
   }
 
@@ -201,7 +201,6 @@
     }
   }
 }
-
 
 
 
@@ -305,6 +304,7 @@ div.new__prod__modal{
 background: linear-gradient(133deg, #006c77a2 0%, rgba(255,255,255,1) 79%);
 
   }
+  
   & > div{
     box-shadow: 0 0 10px 2px #006c77a2;
     border-radius: 60px !important;

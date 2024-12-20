@@ -311,6 +311,8 @@ div.ant-modal{
       height: initial;
       max-height: 500px;
       margin: auto;
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.254));
+
     }
   }
   & h4{
