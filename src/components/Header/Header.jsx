@@ -63,16 +63,16 @@ export default function Header() {
                         href={`/${lang}`} onClick={() => burgerMenuHandler()}>{t('header.homePage')}</Link></li>
                     <li><Link
                         className={isActive('products') ? s.active : ''}
-                        href={`${lang}/products`} onClick={() => burgerMenuHandler()}>{t('header.productsPage')}</Link></li>
+                        href={`/${lang}/products`} onClick={() => burgerMenuHandler()}>{t('header.productsPage')}</Link></li>
                     <li><Link
                         className={isActive('partners') ? s.active : ''}
-                        href={`${lang}/partners`} onClick={() => burgerMenuHandler()}>{t('header.partnersPage')}</Link></li>
+                        href={`/${lang}/partners`} onClick={() => burgerMenuHandler()}>{t('header.partnersPage')}</Link></li>
                     <li><Link
                         className={isActive('contacts') ? s.active : ''}
-                        href={`${lang}/contacts`} onClick={() => burgerMenuHandler()}>{t('header.contactPage')}</Link></li>
+                        href={`/${lang}/contacts`} onClick={() => burgerMenuHandler()}>{t('header.contactPage')}</Link></li>
                     <li><Link
                         className={isActive('aboutUs') ? s.active : ''}
-                        href={`${lang}/aboutUs`} onClick={() => burgerMenuHandler()}>{t('header.aboutPage')}</Link></li>
+                        href={`/${lang}/aboutUs`} onClick={() => burgerMenuHandler()}>{t('header.aboutPage')}</Link></li>
                     <li><a href='https://wa.me/994502016362' target='_blank' className='button' onClick={() => burgerMenuHandler()}>{t('header.contactUsBtn')}</a></li>
                     <li className={s.lang__switch}>
                         <button className={`${lang == 'az' ? s.az : lang == 'ru' ? s.ru : s.en}`}>
