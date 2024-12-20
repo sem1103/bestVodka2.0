@@ -7,6 +7,7 @@
         "aboutPage" : "Haqqımızda",
         "contactUsBtn": "Bizimlə əlaqə!"
     },
+    "introTitle" : "\"BEST\" şirkəti ",
     "introSubtitle": "2006-ci ildən bəri ənənələrimizi davam etdiririk",
     "productPlate" : "Yeni məhsul",
     "homeTitle1" : "Bizim məhsullar",
@@ -29,15 +30,15 @@
 
     },
     "contact": {
-        "text1": "Ünvanımız haradadır?",
-        "address": "Bakı, Sabunçu rayonu, İlyas Aslanov küçəsi, 10",
+        "text1": "Bizim ünvanımız",
+        "address": "Bakı, Sabunçu rayonu, <br /> İlyas Aslanov küçəsi, 10",
         "text2": "Suallarınızla bizə müraciət edin",
         "text3": "Daha ətraflı məlumat üçün"
     },
     "footer" :{
         "navTitle": "Səhifələrimiz",
         "slogan" : "Təbiətdən ilhamlanmış, zövq almaq üçün yaradılmışdır.",
-        "copy": "Copyright © 2024. BEST - Fərdi Şəxsi Firması"
+        "copy": "BEST - Individual Private Company. All rights reserved"
 
     }
 }

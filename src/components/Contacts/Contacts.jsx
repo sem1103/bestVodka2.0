@@ -14,9 +14,9 @@ export default function Contacts() {
                 <h3>
                     {t('contact.text1')}
                 </h3>
-                <a href="https://maps.app.goo.gl/bzweiNPKkrkrCMJ78">
-                    {t('contact.address')}
-                </a>
+                <a href="https://maps.app.goo.gl/bzweiNPKkrkrCMJ78" dangerouslySetInnerHTML={{__html: t('contact.address')}} />
+               
+                
             </div>
 
            
@@ -27,7 +27,7 @@ export default function Contacts() {
                 <h3>
                 {t('contact.text2')}
                 </h3>
-                <a href="mailto:office@best.az">office@best.az</a>
+                <a href="mailto:office@best-spirits.com">office@best-spirits.com</a>
             </div>
 
             <div>

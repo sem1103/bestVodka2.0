@@ -7,6 +7,7 @@
         "aboutPage" : "About Us",
         "contactUsBtn": "Contact Us!"
     },
+    "introTitle" : "The \"BEST\" company",
     "introSubtitle": "We have been continuing the tradition since 2006",
     "productPlate" : "New Product",
     "homeTitle1" : "Our products",
@@ -28,15 +29,15 @@
         "text2": "The \"Best Spirits\" company is a recognized leader in the production of high—quality vodka, which has established itself in the market thanks to its unique formulation and attention to each stage of production. We use only the best natural ingredients, following the traditions and innovations in the field of distillation. <br /> <br /> Our company is proud of its long-term and successful cooperation with the famous brand \"Nemiroff\". This partnership has become an important milestone in our history, allowing us to share experiences, introduce new technologies and reach new heights in vodka production. Thanks to this cooperation, we were able to offer our customers products that meet the highest standards of quality and taste. <br /><br /> We continue to strive for excellence so that each of our products gives customers an unforgettable experience and confidence in its impeccable quality."
     },
     "contact": {
-        "text1": "Where is our address?",
-        "address": "Baku, Sabunchi District, Ilyas Aslanov Street, 10",
+        "text1": "Our address",
+        "address": "Baku, Sabunchi District, <br /> Ilyas Aslanov Street, 10",
         "text2": "Please contact us with your questions",
         "text3": "For more information"
     },
     "footer" :{
         "navTitle": "Our Pages",
         "slogan" : "Inspired by nature, created for enjoyment.",
-        "copy": "Copyright © 2024. BEST - Fərdi Şəxsi Firması"
+        "copy": "BEST - Fərdi Şəxsi Firması. Bütün hüquqlar qorunur."
 
     }
 }

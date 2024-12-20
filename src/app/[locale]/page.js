@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className={s.intro__container}>
 
-          <h1 className={s.prod__name}>~BEST SPIRITS~</h1>
+          <h1 className={s.prod__name}>{t('introTitle')}</h1>
           <p>
             {t('introSubtitle')}
           </p>
@@ -183,7 +183,7 @@ export default function Home() {
           </p>
         </div>
         <h3>
-  <span className={s.numb}>18</span>
+  <span className={s.numb}>{new Date().getFullYear() - 2006}</span>
   <span
     dangerouslySetInnerHTML={{
       __html: t('homeAbout.experience')

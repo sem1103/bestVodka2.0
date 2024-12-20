@@ -1,9 +1,10 @@
 'use client'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import s from './Footer.module.css'
 import Link from 'next/link'
 
 export default function Footer() {
+    const locale = useLocale();
     const t = useTranslations();
     return (
         <footer id={s.footer}>
@@ -13,22 +14,22 @@ export default function Footer() {
                         {t('footer.navTitle')}
                     </h4>
                     <ul>
-                    <li><Link href='/'>
+                    <li><Link href={`/${locale}`}>
                     {t('header.homePage')}
                     </Link></li>
-                    <li><Link href='/products'>
+                    <li><Link href={`/${locale}/products`}>
                     {t('header.productsPage')}
                     </Link></li>
 
-                    <li><Link href='/partners'>
+                    <li><Link href={`/${locale}/partners`}>
                     {t('header.partnersPage')}
                     </Link></li>
 
-                    <li><Link href='/contacts'>
+                    <li><Link href={`/${locale}/contacts`}>
                     {t('header.contactPage')}
                     </Link></li>
 
-                    <li><Link href='/aboutUs'>
+                    <li><Link href={`/${locale}/aboutUs`}>
                     {t('header.aboutPage')}
                     </Link></li>
                 
@@ -71,7 +72,7 @@ export default function Footer() {
             </div>
 
             <h6>
-                {t('footer.copy')}
+            © {`${2006} - ${new Date().getFullYear()}`} | {t('footer.copy')}
             </h6>
         </footer>
     )
