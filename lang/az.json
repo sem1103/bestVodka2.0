@@ -1,0 +1,45 @@
+{
+    "header" : {
+        "notification" : "Sayt texniki işdədir, müvəqqəti narahatlığa görə üzr istəyirik və anlayışınız üçün təşəkkür edirik!",
+        "homePage" : "Ana səhifə",
+        "productsPage" : "Məhsullar",
+        "partnersPage" : "Tərəfdaşlarımız",
+        "contactPage" : "Əlaqə",
+        "aboutPage" : "Haqqımızda",
+        "contactUsBtn": "Bizimlə əlaqə!"
+    },
+    "introTitle" : "\"BEST\" şirkəti ",
+    "introSubtitle": "2006-ci ildən bəri ənənələrimizi davam etdiririk",
+    "productPlate" : "Yeni məhsul",
+    "homeTitle1" : "Bizim məhsullar",
+    "homeTitle2" : "Haqqımızda",
+    "homeTitle3" : "Müasir avadanlıq",
+    "homeTitle4" : "Bizim İstehsal",
+    "homeTitle5" : "Sertifikatlar & Müqavilələr",
+    "productsSlider": {
+        "productType": "Araq",
+        "detailsBtn": "Daha ətraflı"
+    },
+    "homeAbout": {
+        "text": "\"Best - fərdi şəxsi firması\" yüksək keyfiyyətli araqın istehsalı ilə məşğuldur və ənənəvi reseptləri müasir texnologiyalarla birləşdirir. Tərkib hissələrinin unikal seçimi və dəqiq distillə prosesi hər bir şüşədə təmiz və zəngin dad təmin edir. Biz öz peşəkarlığımızla fəxr edirik və hətta ən tələbkar zövqləri belə razı sala biləcək məhsullar təklif etməyə çalışırıq. Detallara diqqət və mükəmməlliyə canatma işimizin əsas prinsipləridir.",
+        "experience": "İl qüsursuz fəaliyyət"
+    },
+    "equipmentText": "Zavod İtaliyanın \"Cavagnino & Gatti\" şirkətinin iki müasir spirtli içkilərin qablaşdırılması xətti ilə təchiz olunub ki, bu da yüksək məhsuldarlığı və məhsulun keyfiyyətini təmin edir. Bu xətlər avtomatlaşdırılmışdır, əl əməyini minimuma endirir və istehsalın hər mərhələsində dəqiqliyi təmin edir. Avadanlıq beynəlxalq standartlara cavab verir və müxtəlif həcmdə və qablaşdırma formatlarında məhsul istehsal etməyə imkan verir, həm yerli, həm də ixrac bazarlarının tələblərinə uyğun olaraq." ,
+    "aboutUsPage": {
+        "text1": "\"Best\" şirkəti ənənəvi formulaları müasir texnologiyalarla birləşdirərək yüksək keyfiyyətli araq istehsalı ilə məşğuldur. Tərkibləri seçmək üçün unikal yanaşmamız və diqqətli distillə prosesi hər şüşənin təmiz və zəngin dadını təmin edir. Biz öz bacarıqlarımızla fəxr edirik və hətta ən tələbkar biliciləri də qane edəcək məhsullar təklif etməyə çalışırıq. Detallara diqqət və mükəmməlliyə can atmaq işimizin əsas prinsipləridir." ,
+        "text2": " \"Best\" şirkəti yüksək keyfiyyətli araq istehsalında tanınmış liderdir, özünəməxsus resepti və istehsalın hər mərhələsinə diqqəti sayəsində bazarda özünü sübut etmişdir. Distillə ənənəsinə və yeniliyinə riayət edərək yalnız ən yaxşı təbii maddələrdən istifadə edirik. <br /><br /> Şirkətimiz tanınmış \"Nemiroff\" brendi ilə çoxillik və uğurlu əməkdaşlıqdan qürur duyur. Bu tərəfdaşlıq birliyi tariximizdə bir mərhələ oldu, təcrübə mübadiləsi aparmağa, yeni texnologiyalar tətbiq etməyə və araq istehsalında yeni zirvələrə çatmağa imkan verdi. Bu əməkdaşlıq sayəsində müştərilərimizə ən yüksək keyfiyyət və dad standartlarına cavab verən məhsullar təqdim edə bildik. <br /><br /> Mükəmməlliyə can atmağa davam edirik ki, hər bir məhsulumuz müştərilərə unudulmaz hisslər və qüsursuz keyfiyyətinə inam bəxş etsin."
+
+    },
+    "contact": {
+        "text1": "Bizim ünvanımız",
+        "address": "Bakı, Sabunçu rayonu, <br /> İlyas Aslanov küçəsi, 10",
+        "text2": "Suallarınızla bizə müraciət edin",
+        "text3": "Daha ətraflı məlumat üçün"
+    },
+    "footer" :{
+        "navTitle": "Səhifələrimiz",
+        "slogan" : "Təbiətdən ilhamlanmış, zövq almaq üçün yaradılmışdır.",
+        "copy": "BEST - Fərdi Şəxsi Firması. Bütün hüquqlar qorunur."
+
+    }
+}

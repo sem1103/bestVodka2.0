@@ -1,0 +1,51 @@
+.about__us {
+
+    & .about__section {
+        display: flex;
+        justify-content: space-between;
+        margin: clamp(10px, 2vw, 25px) 0;
+        align-items: start;
+        gap: 25px 10px;
+        margin: 0 0 50px 0;
+
+        & p {
+            font: 18px Oswald;
+        }
+
+        & .about__text {
+            flex-basis: 55%;
+        }
+
+        & .about__img {
+            flex: 1;
+        }
+
+
+        & img {
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+}
+
+.about__section:nth-of-type(2) .about__img {
+    max-width: 250px;
+    margin: auto;
+}
+
+@media (width < 700px) {
+    .about__us {
+        & .about__section {
+            flex-direction: column;
+        }
+    }
+
+    .about__us .about__section:not(:first-child) .about__img {
+        order: 2;
+        width: 100%;
+      }
+      
+      .about__us .about__section:not(:first-child) .about__text {
+        order: 1;
+      }
+}

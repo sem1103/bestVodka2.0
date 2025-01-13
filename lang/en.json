@@ -1,0 +1,44 @@
+{
+    "header" : {
+        "notification" : "The website is undergoing technical maintenance, we apologize for the temporary inconvenience and thank you for your understanding!",
+        "homePage" : "Home",
+        "productsPage" : "Products",
+        "partnersPage" : "Partners",
+        "contactPage" : "Contacts",
+        "aboutPage" : "About Us",
+        "contactUsBtn": "Contact Us!"
+    },
+    "introTitle" : "The \"BEST\" company",
+    "introSubtitle": "We have been continuing the tradition since 2006",
+    "productPlate" : "New Product",
+    "homeTitle1" : "Our products",
+    "homeTitle2" : "About us",
+    "homeTitle3" : "Modern equipment",
+    "homeTitle4" : "Our Production",
+    "homeTitle5" : "Certificates & Agreements",
+    "productsSlider": {
+        "productType": "Vodka",
+        "detailsBtn": "More detailed"
+    },
+    "homeAbout": {
+        "text": "The company \"Best - fərdi shəxsi firması\" is engaged in the production of high-quality vodka, combining traditional recipes with modern technologies. Our unique approach to the selection of ingredients and careful distillation process ensure the pure and rich taste of each bottle. We are proud of our craftsmanship and strive to offer products that will satisfy even the most demanding connoisseurs. Attention to detail and striving for excellence are the main principles of our work.",
+        "experience": "Years of impeccable work"
+    },
+    "equipmentText": "The factory is equipped with two modern bottling lines for alcoholic beverages from the Italian company \"Cavagnino & Gatti\" which ensure high productivity and product quality. These lines are automated, minimizing manual labor and guaranteeing precision at every stage of production. The equipment meets international standards and allows the production of beverages in various volumes and packaging formats, catering to the needs of both local and export markets." ,
+    "aboutUsPage": {
+        "text1": "The company \"Best\" is engaged in the production of high-quality vodka, combining traditional formulations with modern technologies. Our unique approach to the selection of ingredients and careful distillation process ensure the pure and rich taste of each bottle. We are proud of our craftsmanship and strive to offer products that will satisfy even the most demanding connoisseurs. Attention to detail and striving for excellence are the main principles of our work.",
+        "text2": "The \"Best\" company is a recognized leader in the production of high—quality vodka, which has established itself in the market thanks to its unique formulation and attention to each stage of production. We use only the best natural ingredients, following the traditions and innovations in the field of distillation. <br /> <br /> Our company is proud of its long-term and successful cooperation with the famous brand \"Nemiroff\". This partnership has become an important milestone in our history, allowing us to share experiences, introduce new technologies and reach new heights in vodka production. Thanks to this cooperation, we were able to offer our customers products that meet the highest standards of quality and taste. <br /><br /> We continue to strive for excellence so that each of our products gives customers an unforgettable experience and confidence in its impeccable quality."
+    },
+    "contact": {
+        "text1": "Our address",
+        "address": "Baku, Sabunchi District, <br /> Ilyas Aslanov Street, 10",
+        "text2": "Please contact us with your questions",
+        "text3": "For more information"
+    },
+    "footer" :{
+        "navTitle": "Our Pages",
+        "slogan" : "Inspired by nature, created for enjoyment.",
+        "copy": "BEST - Individual Private Company. All rights reserved."
+
+    }
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://best-spirits.com
+
+# Sitemaps
+Sitemap: https://best-spirits.com/sitemap.xml

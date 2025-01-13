@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Главная страница -->
+  <url>
+    <loc>https://best-spirits.com/az</loc>
+    <lastmod>2024-12-27T18:08:49+00:00</lastmod>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="az" href="https://best-spirits.com/az" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://best-spirits.com/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://best-spirits.com/en" />
+  </url>
+
+  <!-- Продукция -->
+  <url>
+    <loc>https://best-spirits.com/az/məhsullar</loc>
+    <lastmod>2024-12-27T18:08:49+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="az" href="https://best-spirits.com/az/məhsullar" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://best-spirits.com/ru/produksiya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://best-spirits.com/en/products" />
+  </url>
+
+  <!-- Партнеры -->
+  <url>
+    <loc>https://best-spirits.com/az/təfdaşlarımız</loc>
+    <lastmod>2024-12-27T18:08:49+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="az" href="https://best-spirits.com/az/təfdaşlarımız" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://best-spirits.com/ru/partneri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://best-spirits.com/en/partners" />
+  </url>
+
+  <!-- Контакты -->
+  <url>
+    <loc>https://best-spirits.com/az/əlaqə</loc>
+    <lastmod>2024-12-27T18:08:49+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="az" href="https://best-spirits.com/az/əlaqə" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://best-spirits.com/ru/kontakti" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://best-spirits.com/en/contacts" />
+  </url>
+
+  <!-- О нас -->
+  <url>
+    <loc>https://best-spirits.com/az/haqqımızda</loc>
+    <lastmod>2024-12-27T18:08:49+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="az" href="https://best-spirits.com/az/haqqımızda" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://best-spirits.com/ru/o-nas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://best-spirits.com/en/about" />
+  </url>
+
+</urlset>
